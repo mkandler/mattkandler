@@ -1,2 +1,33 @@
-%h1
-  Hel
+#landing_page
+  .page_container
+    .left_container
+      .top_info
+        .myphoto
+        %h1 Matthew Kandler
+        .separator
+        .linker_container
+          %a.linkedin.linker{href: "http://www.linkedin.com/pub/matthew-kandler/23/431/96a"}
+          %a.twitter.linker{href: "http://www.twitter.com/mattkandler"}
+          %a.instagram.linker{href: "http://www.instagram.com/mattkandler"}
+          %a.quixplore.linker{href: "http://quixplore.com/users/matt"}
+        .description
+          After receiving an MSME from Stanford, I started Quixplore
+          with my friend, Nic Hippenmeyer. We took on the huge challenge of trying to bring all of the great things
+          happening in the world to one place, and we created a pretty cool place for sharing local events.
+          %br
+          %br
+          As product designer I picked up some design chops and learned a bit about front-end engineering and Ruby
+          on Rails. Now, I'm looking for the next big challenge. Check out some of my design work below.
+        .separator
+      .projects_portfolio
+        %h2 Projects and Portfolio
+        .project.quixplore
+    .right_container.quixplore
+      .screenshot
+        = image_tag("quixplore/quixplore-0.png")
+      .screenshot
+        = image_tag("quixplore/quixplore-1.png")
+      .screenshot
+        = image_tag("quixplore/quixplore-2.png")
+      .bottom
+        = link_to("|  quixplore.com  |", "http://quixplore.com")

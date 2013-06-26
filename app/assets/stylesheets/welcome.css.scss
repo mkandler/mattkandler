@@ -1,0 +1,117 @@
+@import 'bourbon';
+@import 'compass';
+@import 'icons/*.png';
+
+#landing_page {
+  .page_container {
+    background: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .left_container {
+      text-shadow: 0px 1px 0.5px #fff;
+      @include box-shadow(0 0 10px 0px #000);
+      background: #e3e3e3;
+      position: absolute;
+      top: 0px;
+      width: 600px;
+      height: 100%;
+      text-align: center;
+      overflow: auto;
+      .top_info {
+        .myphoto {
+          width: 75px;
+          height: 75px;
+          @include border-radius(40px);
+          border: solid 2px white;
+          margin: 30px auto 15px auto;
+          background-image: url('mattkandler.jpg');
+        }
+        .linker_container {
+          .linker {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0px 5px 15px 5px;
+            &.linkedin {
+              @include icons-sprite(circle-linkedin);
+              &:hover { @include icons-sprite(circle-linkedin-active); }
+            }
+            &.twitter {
+              @include icons-sprite(circle-twitter);
+              &:hover { @include icons-sprite(circle-twitter-active); }
+            }
+            &.instagram {
+              @include icons-sprite(circle-instagram);
+              &:hover { @include icons-sprite(circle-instagram-active); }
+            }
+            &.quixplore {
+              @include icons-sprite(circle-quixplore);
+              &:hover { @include icons-sprite(circle-quixplore-active); }
+            }
+          }
+        }
+        .description{
+          max-width: 450px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      .projects_portfolio {
+        .project {
+          margin: 20px auto 10px auto;
+          position: relative;
+          display: block;
+          cursor: pointer;
+          &.quixplore {
+            height: 112px;
+            width: 314px;
+            @include icons-sprite(quixplore-logo);
+            &:hover { @include icons-sprite(quixplore-logo-active); }
+          }
+        }
+      }
+      .separator {
+        width: 450px;
+        height: 1px;
+        margin: auto;
+        background: #aaa;
+        border-bottom: 1px #fff solid;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    }
+    .right_container.quixplore {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 600px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      padding: 40px;
+      overflow: auto;
+      .screenshot {
+        margin-bottom: 40px;
+        max-width: 100%;
+        position: relative;
+        display: inline-block;
+      }
+      .bottom {
+        text-align: center;
+        a {
+          font-size: 24px;
+          font-weight: 600;
+          color: #aaa;
+          &:hover {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
