@@ -6,25 +6,46 @@
         %h1 Matthew Kandler
         .separator
         .linker_container
-          %a.linkedin.linker{href: "http://www.linkedin.com/pub/matthew-kandler/23/431/96a"}
-          %a.twitter.linker{href: "http://www.twitter.com/mattkandler"}
-          %a.instagram.linker{href: "http://www.instagram.com/mattkandler"}
-          %a.quixplore.linker{href: "http://quixplore.com/users/matt"}
+          %a.linkedin.linker{href: "http://www.linkedin.com/pub/matthew-kandler/23/431/96a", rel: 'tooltip', title: "LinkedIn", target: '_blank'}
+          %a.twitter.linker{href: "http://www.twitter.com/mattkandler", rel: 'tooltip', title: "Twitter", target: '_blank'}
+          %a.instagram.linker{href: "http://www.instagram.com/mattkandler", rel: 'tooltip', title: "Instagram", target: '_blank'}
+          %a.quixplore.linker{href: "http://quixplore.com/users/matt", rel: 'tooltip', title: "Quixplore", target: '_blank'}
         .description
-          After receiving an MSME from Stanford, I started Quixplore
-          with my friend, Nic Hippenmeyer. We took on the huge challenge of trying to bring all of the great things
-          happening in the world to one place, and we created a pretty cool place for sharing local events.
+          After receiving an MSME
+          %a{rel: 'tooltip', title: "Master's in Mechanical Engineering"} (?)
+          from Stanford, I co-founded Quixplore
+          with my friend, Nic Hippenmeyer. We began with the huge challenge of trying to bring all of the great things
+          happening in the world to one place, and we created a pretty cool web app for sharing local events.
           %br
           %br
-          As product designer I picked up some design chops and learned a bit about front-end engineering and Ruby
-          on Rails. Now, I'm looking for the next big challenge. Check out some of my design work below.
+          As product designer, I've picked up some design chops, learned front-end engineering and Ruby
+          on Rails, and feel like I could write a book on start-up interaction design 'do's and 'don't's. Now, I'm
+          looking for the next big challenge. Check out some of my design work below.
         .separator
       .projects_portfolio
         %h2 Projects and Portfolio
-        ( Select to view images )
+        ( Select to view more )
         .project.quixplore
         .project.icons
     .right_container.quixplore
+      .top
+        %h2 Quixplore
+        Quixplore is a shared social calendar for your friends and followers.
+        Our goal is to give people and organizations a single place to share their plans and ideas for things to do. We
+        have found that most people email and text to share these things with friends, so we built a platform
+        that leverages location and time to make both sharing and discovery a more intuitive process.
+        %br
+        %br
+        This has been my full-time job for the past year and something I am still very passionate about working on.
+        Please take the opportunity to check out the site and sign up to join. You'll be able to see how I've
+        handled a variety of design challenges and hopefully enjoy trying it out in the process.
+        %br
+        %br
+        %a{href: "http://quixplore.com", target: '_blank'} Landing Page
+        = " | "
+        %a{href: "http://quixplore.com/posts/dm4hysq6", target: '_blank'} Sample Event Page
+        = " | "
+        %a{href: "http://angel.co/quixplore", target: '_blank'} AngelList Profile
       .screenshot
         = image_tag("quixplore/quixplore-0.png")
       .screenshot
@@ -40,6 +61,11 @@
       .bottom
         = link_to("|  quixplore.com  |", "http://quixplore.com")
     .right_container.icons
+      .top
+        %h2 Misc. Icons
+        Some examples of vector icons I've made for various projects - if you feel that any of them (or
+        something similar) might be a useful addition to one of your projects, I'd be happy to share the full file or
+        make a new one to suit your needs.
       .square
         = image_tag("misc/misc-shades.png")
       .square
