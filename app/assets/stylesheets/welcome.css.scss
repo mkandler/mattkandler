@@ -85,6 +85,12 @@
             @include icons-sprite(icons-logo);
             &:hover { @include icons-sprite(icons-logo-active); }
           }
+          &.robotics {
+            height: 100px;
+            width: 320px;
+            @include icons-sprite(robotics-logo);
+            &:hover { @include icons-sprite(robotics-logo-active); }
+          }
         }
       }
       .separator {
