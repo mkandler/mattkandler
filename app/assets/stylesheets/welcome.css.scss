@@ -85,6 +85,12 @@
             @include icons-sprite(icons-logo);
             &:hover { @include icons-sprite(icons-logo-active); }
           }
+          &.sketches {
+            height: 79px;
+            width: 323px;
+            @include icons-sprite(sketches-logo);
+            &:hover { @include icons-sprite(sketches-logo-active); }
+          }
           &.robotics {
             height: 100px;
             width: 320px;
