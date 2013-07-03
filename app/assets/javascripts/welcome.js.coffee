@@ -8,7 +8,6 @@ $ ->
     $('.right_container.quixplore').fadeOut()
     $('.right_container.robotics').fadeOut()
     $('.right_container.icons').fadeToggle()
-$('a').tooltip();
 $ ->
   $('.project.robotics').click ->
     $('.right_container.quixplore').fadeOut()
