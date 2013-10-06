@@ -11,24 +11,65 @@
           %a.instagram.linker{href: "http://www.instagram.com/mattkandler", rel: 'tooltip', title: "Instagram", target: '_blank'}
           %a.quixplore.linker{href: "http://quixplore.com/users/matt", rel: 'tooltip', title: "Quixplore", target: '_blank'}
         .description
-          After receiving an MSME
-          %a{rel: 'tooltip', title: "Master's in Mechanical Engineering"} (?)
-          from Stanford, I co-founded Quixplore
-          with my friend, Nic Hippenmeyer. We began with the huge challenge of trying to bring all of the great things
-          happening in the world to one place, and we created a pretty cool web app for sharing local events.
+          I'm a designer/developer living in Brooklyn (previously Palo Alto).  I've built robots, co-founded a
+          consumer internet startup, designed and created made my own iOS app, and now I'm working with an early stage
+          edtech startup to help empower consumers to choose the best online degree programs.  Design is my passion,
+          but I'm also well-versed in Ruby on Rails and Objective-C.
           %br
           %br
-          As product designer, I've picked up some design chops, learned front-end engineering and Ruby
-          on Rails, and feel like I could write a book on start-up interaction design 'do's and 'don't's. Now, I'm
-          looking for the next big challenge. Check out some of my past work below.
+          All of the projects listed below are still up and running.
+          If you have any thoughts or feedback I'd love to hear them.
+          Shoot me a message at
+          = mail_to 'matthew.kandler@gmail.com'
+          and I'll get back to you ASAP.  Also, be sure to check out
+          = link_to 'http://goranku.com', 'http://goranku.com'
+          to see my current work!
+          -#After receiving an MSME
+          -#%a{rel: 'tooltip', title: "Master's in Mechanical Engineering"} (?)
+          -#from Stanford, I co-founded Quixplore
+          -#with my friend, Nic Hippenmeyer. We began with the huge challenge of trying to bring all of the great things
+          -#happening in the world to one place, and we created a pretty cool web app for sharing local events.
+          -#%br
+          -#%br
+          -#As product designer, I've picked up some design chops, learned front-end engineering and Ruby
+          -#on Rails, and feel like I could write a book on start-up interaction design 'do's and 'don't's. Now, I'm
+          -#looking for the next big challenge. Check out some of my past work below.
         .separator
       .projects_portfolio
         %h2 Projects and Portfolio
         ( Select to view more )
+        .project.happyfeed
         .project.quixplore
         .project.icons
         -#.project.sketches
-        .project.robotics
+        -#.project.robotics
+    .right_container.happyfeed
+      .top
+        %h2 HappyFeed
+        Between slowing down work on Quixplore and starting with Ranku, I spent the summer learning to built iOS
+        apps. HappyFeed was the first app I fully designed and built and it is currently available in the Apple App
+        Store.
+        %br
+        %br
+        The idea came from some research that suggests people can become significantly happier by creating a nightly
+        routine of recording three positive moments from that day.  What better device to do this on than your phone?
+        I also wanted to create something that was beautifully simple.  It has one function - save moments, be happier.
+        Quixplore was a complicated product, this was my balancing act.
+        %br
+        %br
+        %a{href: "https://itunes.apple.com/us/app/happyfeed/id707073943?ls=1&mt=8", target: '_blank'} Apple App Store
+        = " | "
+        %a{href: "http://happyfeed.co", target: '_blank'} Home page
+      .screenshot.ios
+        = image_tag("happyfeed/happyfeed-0.png")
+      .screenshot.ios
+        = image_tag("happyfeed/happyfeed-1.png")
+      .screenshot.ios
+        = image_tag("happyfeed/happyfeed-2.png")
+      .screenshot.ios
+        = image_tag("happyfeed/happyfeed-3.png")
+      .screenshot.ios
+        = image_tag("happyfeed/happyfeed-4.png")
     .right_container.quixplore
       .top
         %h2 Quixplore
@@ -118,25 +159,25 @@
     -#    = image_tag("sketches/sketch-3.png")
     -#  .screenshot
     -#    = image_tag("sketches/sketch-2.png")
-    .right_container.robotics
-      .top
-        %h2 Urban Robotics Project
-        While studying Mechanical Engineering at Bucknell University I was involved in a robotics project with The Florida
-        Institute for Human & Machine Cognition (IHMC). Along with other student researchers I developed two iterations
-        of a robotic vision platform, or 'head', for a bipedal walking robotic.
-        %br
-        %br
-        The second iteration was a more advanced platform with stereo vision, linked-in 3D goggles, joystick control
-        and active stabilization using a gyroscope module. Along with designing much of the platform in SolidWorks, I
-        programmed the control system that integrated the motors, joystick, and gyroscope (using Java).
-        %br
-        %br
-        %a{href: "http://www.students.bucknell.edu/projects/urbanrobots/home.html", target: '_blank'} Urban Robotics Website
-        = " | "
-        %a{href: "http://www.youtube.com/watch?v=24Lz18QyeMM", target: '_blank'} Video (early testing)
-      .screenshot
-        = image_tag("robotics/robotics-1.png")
-      .screenshot
-        = image_tag("robotics/robotics-2.png")
-      .screenshot
-        = image_tag("robotics/robotics-3.png")
+    -#.right_container.robotics
+    -#  .top
+    -#    %h2 Urban Robotics Project
+    -#    While studying Mechanical Engineering at Bucknell University I was involved in a robotics project with The Florida
+    -#    Institute for Human & Machine Cognition (IHMC). Along with other student researchers I developed two iterations
+    -#    of a robotic vision platform, or 'head', for a bipedal walking robotic.
+    -#    %br
+    -#    %br
+    -#    The second iteration was a more advanced platform with stereo vision, linked-in 3D goggles, joystick control
+    -#    and active stabilization using a gyroscope module. Along with designing much of the platform in SolidWorks, I
+    -#    programmed the control system that integrated the motors, joystick, and gyroscope (using Java).
+    -#    %br
+    -#    %br
+    -#    %a{href: "http://www.students.bucknell.edu/projects/urbanrobots/home.html", target: '_blank'} Urban Robotics Website
+    -#    = " | "
+    -#    %a{href: "http://www.youtube.com/watch?v=24Lz18QyeMM", target: '_blank'} Video (early testing)
+    -#  .screenshot
+    -#    = image_tag("robotics/robotics-1.png")
+    -#  .screenshot
+    -#    = image_tag("robotics/robotics-2.png")
+    -#  .screenshot
+    -#    = image_tag("robotics/robotics-3.png")
