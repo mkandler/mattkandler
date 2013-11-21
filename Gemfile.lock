@@ -71,6 +71,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.7.7)
+    newrelic_rpm (3.6.8.168)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -127,6 +128,7 @@ DEPENDENCIES
   compass-rails
   haml-rails
   jquery-rails
+  newrelic_rpm
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)
