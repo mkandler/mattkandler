@@ -7,6 +7,7 @@ gem 'rails', '3.2.11'
 
 gem 'haml-rails'
 gem 'bourbon'
+gem 'newrelic_rpm'
 
 
 # Gems used only for assets and not required
@@ -17,7 +18,6 @@ group :assets do
   gem 'bootstrap-sass'
   gem 'compass-rails'
   gem 'uglifier', '>= 1.0.3'
-  gem 'newrelic_rpm'
 end
 
 gem 'jquery-rails'
